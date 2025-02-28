@@ -6,4 +6,8 @@ on an ATtiny under Arduino, tested on an ATtiny 3224.  It
 * Counts interrupts over a 1 second interval.
 * Displays the counts once per second on an i2c OLED display.
 
+It uses the Tiny4kOLED library which can be installed using the
+Arduino Library Manager.
+
 It is documented in a YouTube video.
+https://youtu.be/B8oWOgiHOlg
