@@ -1,0 +1,9 @@
+This directory contains a program that demonstrates pin interrupts
+on an ATtiny under Arduino, tested on an ATtiny 3224.  It
+
+* Enables interrupts on two external pins.
+* Toggles output pins when the interrupts are serviced.
+* Counts interrupts over a 1 second interval.
+* Displays the counts once per second on an i2c OLED display.
+
+It is documented in a YouTube video.
