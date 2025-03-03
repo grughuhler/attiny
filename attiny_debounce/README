@@ -1,0 +1,18 @@
+This program demonstrates driect interrupts on an ATtiny 412
+microcontroller. Direct interrupts are specific to megatinycore and do
+not use the standard Arduino API attachInterrupt.  This increases
+interrupt performance.
+
+The program implements two interrupts.
+
+1.  An external pin interrupt (IRQ) that is used to measure maximum
+    interrupts per second.
+2.  A periodic interrupt from the RTC/PIT peripheral.  This is used to
+    implement the switch debounce algorithm that Jack Ganssle described.
+
+This was tested using megatinycore on Arduino 1.8.19.
+
+See this YouTube Video for more information:
+
+
+    
