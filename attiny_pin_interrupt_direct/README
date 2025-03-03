@@ -1,0 +1,4 @@
+This is a variant of the attiny_pin_interrupt software that uses
+direct interrupts rather than standard Arduino attachInterrupt.
+See ../attiny_pin_interrupt/README and ../attiny_debounce/README.
+
