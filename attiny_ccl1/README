@@ -1,0 +1,8 @@
+This Arduino sketch demonstrates the Configurable Custom Logic (CCL)
+block on ATtiny series 1 and 2 microcontrollers.  It is tested using
+an ATtiny 3226.
+
+Two YouTube videos describe this:
+
+Video1:
+Video2:
