@@ -50,7 +50,7 @@ void sr_latch_sequencer(void)
   Logic3.truth = 0x2;                      // out = in
   Logic3.filter = logic::filter::disable;
   Logic3.edgedetect = logic::edgedetect::disable;
-  Logic3.output = logic::out::disable;    // out not enabled; lut2 out used
+  Logic3.output = logic::out::disable;    // out not enabled; lut2 unused
 
   Logic2.init(); // Apply above settings and also call start later.
   Logic3.init();  
@@ -76,13 +76,17 @@ void sr_latch_feedback(void)
 void filter_edge_demo(void)
 {
   Logic2.enable = true;
-  Logic2.clocksource = logic::clocksource::in2; // clock in from PB2
   Logic2.input0 = logic::in::input_pullup;      // in0 on PB0
   Logic2.input1 = logic::in::masked;
-  Logic2.input2 = logic::in::input;             // in2 on PB2 (for clk)
+  Logic2.input2 = logic::in::input;             // in2 on PB2 (for clock)
   Logic2.truth = 0x2;                           // out = in0
+  Logic2.clocksource = logic::clocksource::in2; // clock in from PB2
+
+  /* set to disable, synchronizer, or filter */
   Logic2.filter = logic::filter::disable;
+  /* set to enable or disable */
   Logic2.edgedetect = logic::edgedetect::disable;
+  
   Logic2.sequencer = logic::sequencer::disable;
   Logic2.output = logic::out::enable;           // Output on PB3
 
