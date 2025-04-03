@@ -1,0 +1,22 @@
+This program shows how the attiny event system can tie together other
+attiny hardware blocks and let them run independently from the core,
+even when the core is asleep (in standby mode).
+
+It implements a nightlight with a switch that overrides the darkness
+sensor (a phototransistor) and turns on the nightlight LED.
+
+It has been tested on both an attiny series 1 part (the 412) and on a
+series 2 part (the 3224).
+
+It demonstrates: The attiny event system working with
+
+  - the configurable custom logic (CCL) block
+  - the analog comparator (AC).
+  - input pins
+  - the port A EVOUT pin
+
+And it demonstrates attiny power management, in particular sleeping in
+the standby mode state with wake up from an interrupt from the
+Periodic Interval Timer (PIT).
+
+It is explained in YouTube video:
