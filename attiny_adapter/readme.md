@@ -11,4 +11,4 @@ additional silk screen text.  It has not been built but probably is OK.
 This is a rendering of more_silk_adap0_gerber.zip.  The other is
 similar but omits most of the silk screen text.
 
-![Rendering of more_silk_adap0_gerber.zip](attiny/attiny_adapter/adapter_image.png)
+![Rendering of more_silk_adap0_gerber.zip](https://github.com/grughuhler/attiny/blob/main/attiny_adapter/adapter_image.png)
