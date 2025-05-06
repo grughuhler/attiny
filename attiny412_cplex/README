@@ -1,0 +1,4 @@
+This directory contains an Arduino sketch that charlieplexes 12 LEDs
+using four pins on an ATtiny 412 microcontroller.
+
+It is explained in YouTube video: NOTYET
