@@ -6,11 +6,10 @@ I tested this on a board that I built.  This board contains 20 LEDs
 (two 10-LED bars) that are controlled using charlieplexing with 5
 attiny signals.
 
-See https://youtu.be/Y6cBaTSOIQY?si=wi81b1LPMpr8YfVs for my video
-on charlieplexing.
+See https://youtu.be/Y6cBaTSOIQY for my video on charlieplexing.
 
 The i2c slave function is decribed in a different video:
-XXXXX
+https://youtu.be/h6oQc6s03oI
 
 There is i2c master software in directory control_leds.  You can use a
 Linux PC with a CP2112 USB to i2c adapter as a master.  Also, a
