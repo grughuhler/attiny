@@ -1,0 +1,16 @@
+This directory contains i2c master software to drive an attiny i2c
+slave board that charlieplexes 20 LEDs.  Function do_write writes a
+value to the slave to be displayed on the LEDs.
+                                                                              
+This has been tested on Ubuntu 22.04.5 LTS using a CP2112 USB to i2c
+adapter.  It should also work on a Raspberry Pi using the Pi's native
+i2c pins.  Install these packages:
+                                                                              
+   sudo apt install i2c-tools libi2c-dev                                      
+                                                                              
+If running the attiny at 5V, you will need signal level converters
+since the CP2112 or Raspberry Pi are using 3.3V signaling.
+
+You may have to adjust I2C_BUS in the source file.  For a Raspberry Pi,
+it is probably "/dev/i2c-1".  For a Linux PC, watch and see what appears
+when you plug in the CP2112 board.

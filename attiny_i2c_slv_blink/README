@@ -1,0 +1,17 @@
+This directory contains an Arduino sketch that implements an i2c slave
+on an attiny 1614 microcontroller.  It should work on any series 1 or
+2 attiny.
+
+I tested this on a board that I built.  This board contains 20 LEDs
+(two 10-LED bars) that are controlled using charlieplexing with 5
+attiny signals.
+
+See https://youtu.be/Y6cBaTSOIQY?si=wi81b1LPMpr8YfVs for my video
+on charlieplexing.
+
+The i2c slave function is decribed in a different video:
+XXXXX
+
+There is i2c master software in directory control_leds.  You can use a
+Linux PC with a CP2112 USB to i2c adapter as a master.  Also, a
+Raspberry Pi should work with its native i2c pins.
